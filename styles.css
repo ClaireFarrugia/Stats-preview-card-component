@@ -1,0 +1,158 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+#card{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    background-color: hsl(244, 38%, 16%);
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 1000px;
+    height: 400px;
+    display: flex;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 50px;
+}
+
+#title{
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 400px;
+}
+
+#insights{
+    color: hsl(277, 64%, 61%);
+
+}
+
+#p{
+    line-height: 1.5;
+    padding: 10px 0px 35px 0px;
+}
+
+#desktop{
+    border-radius: 0px 16px 16px 0px;
+    height: 100%;
+    width: 45%;
+    
+}
+
+#mobile{
+    border-radius: 0px 16px 16px 0px;
+    height: 100%;
+    width: 45%;
+    display: none;
+}
+
+.fig{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.stats{
+    padding: 0px 75px 0px 0px;
+}
+
+#bottom{
+    display: flex;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px 16px 16px 0px;
+    height: 100%;
+    width: 45%;
+    opacity: 0.4;
+    background-color: hsl(277, 64%, 61%);
+  }
+
+  @media only screen and (max-width: 675px) {
+
+body{
+    margin: 0px;
+}
+
+#card{
+    width: 300px;
+    height: 700px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#desktop{
+    
+    width: 300px;
+    height: 350px;
+    border-radius: 16px 16px 0px 0px;
+    display: none;
+}
+
+#mobile{
+    width: 300px;
+    height: 350px;
+    border-radius: 16px 16px 0px 0px;
+    display: block;
+}
+
+
+.overlay{
+    top: -85px;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 220px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+#title{
+    font-size: x-large;
+    width:200px;}
+#p{
+    font-size: small;
+    width:220px
+}
+
+#text{
+    text-align: center;
+    width: 200px;
+    height: 500px;
+
+}
+
+#bottom{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+}
+
+.stats{
+    padding: 0px 0px 20px 0px;
+}
+
+br {
+    display: none;
+}
+    }
